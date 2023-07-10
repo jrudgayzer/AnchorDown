@@ -15,25 +15,37 @@ body {
   margin: 0 auto;
   padding: 1em;
 }
+.days-open-container {
+  background-color: #f9f9f9; /* A light background to make it stand out */
+  padding: 1em;
+  border-radius: 5px; /* Rounded corners for a soft look */
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16); /* Some shadow for a "lifted" effect */
+}
+
+.days-open-heading {
+  text-align: center;
+  color: #007BFF; /* Use your blue color for consistency */
+  text-transform: uppercase; /* Make all letters uppercase */
+  font-size: 2em; /* Make it a bit larger */
+}
+
+.days-open-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  text-align: center; /* Center the text */
+  line-height: 1.6; /* Add some space between the lines */
+}
+
+.days-open-list li {
+  font-size: 1.2em; /* Increase the font size a bit */
+  color: #333; /* Dark grey color for the text */
+}
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
-  background: #007BFF; /* A header background can make it stand out more */
-  color: white; /* White text for better contrast */
-}
-
-.header-content img {
-  max-width: 100%;
-  height: auto;
-}
-
-.headline {
-  font-size: 1.5em;
-  text-align: center;
-  color: #007BFF; /* Consistent color scheme */
 }
 h2{
 
