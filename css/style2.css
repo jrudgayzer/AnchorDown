@@ -1,13 +1,11 @@
-ul {
-    list-style-type: none;
-  }
-
 body {
-  font-family: Arial, Verdana, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif; /* Roboto is a clean and professional font */
   font-size: 16px;
-  color: black;
+  color: #333; /* Dark grey is softer on the eyes than pure black */
   margin: 0;
   padding: 0;
+  line-height: 1.5; /* Improves readability */
+  background: #F8F9FA; /* Light grey background can look more professional than pure white */
 }
 
 .container {
@@ -35,37 +33,9 @@ header {
   text-align: center;
   color: #007BFF; /* Consistent color scheme */
 }
-h2{
-
-
- display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-  font-size: 20px;
-}
-article {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: blue;
-  font-size: 20px;
-}
-.header-content img {
-  max-width: 100%;
-  height: auto;
-}
-
-.headline {
-  font-size: 1.5em;
-  text-align: center;
-  color: blue;
-}
 
 nav {
   margin: 1em 0;
-  
 }
 
 .nav-links {
@@ -73,20 +43,16 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 0;
-  
 }
 
 .nav-links a {
-  color: blue;
+  color: #007BFF;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .nav-links a:hover {
-  color: purple;
-}
-
-.hero {
-  
+  color: #0056b3; /* Darken color on hover */
 }
 
 .hero h2,
@@ -97,19 +63,24 @@ nav {
 section#about,
 section#days-open {
   margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-
 footer {
-  background-color: white;
+  background-color: #007BFF;
   padding: 1em 0;
-  color: blue;
-  margin: 5px;
-border: 1px solid black;
+  color: white;
+  margin-top: 2em;
+  border-top: 1px solid #0056b3;
+}
 
+footer h3,
+footer p {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 0.5em;
+}
 
 }
  .invisible-image {
@@ -125,52 +96,18 @@ border: 1px solid black;
 display: flex;
     justify-content: space-between;
     align-items: center;
-  
-}
-footer h3,
-footer p {
-  text-align: center;
-}
-
-footer p {
-  margin-top: 0.5em;
-}
-.about-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-content {
-    flex: 1;
-    margin-right: 2em; 
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto;
+    }
 
 
-}
+
 /* Media Queries */
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
   .nav-links {
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-
   .nav-links {
     flex-direction: row;
   }
