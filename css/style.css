@@ -47,6 +47,16 @@ header {
   align-items: center;
   height: 200px;
 }
+
+h1{
+
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+
+}
 h2{
 
 
